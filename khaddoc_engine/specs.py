@@ -10,14 +10,17 @@ class KhaddockBase:
     metadata: KhaddockMetadata
     labels: dict[str, str]
 
+
 @dataclasses.dataclass
 class KhaddockMetadata:
     name: str
     namespace: str
 
+
 @dataclasses.dataclass
 class SailorBase(KhaddockBase):
     specs: SailorSpecs
+
 
 @dataclasses.dataclass
 class SailorSpecs:
